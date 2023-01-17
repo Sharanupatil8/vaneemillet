@@ -1,0 +1,179 @@
+@media (max-width: 84em) {
+  header {
+    padding: 1rem 5rem;
+  }
+
+  .header-hero {
+    max-width: 120rem;
+    gap: 6rem;
+  }
+}
+
+@media (max-width: 79em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container {
+    max-width: 110rem;
+  }
+
+  .grid--2--cols {
+    gap: 5.2rem;
+  }
+
+  .aout-img {
+    width: 80%;
+  }
+  hr {
+    max-width: 110rem;
+  }
+
+  .about_section,
+  .products,
+  .how--to--cook,
+  .benefits {
+    padding: 7.2rem;
+  }
+
+  footer {
+    margin-top: 7.2rem;
+  }
+}
+
+@media (max-width: 67em) {
+  html {
+    font-size: 50%;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 1.3;
+  }
+
+  .header-hero {
+    grid-template-columns: 1fr;
+    max-width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25rem;
+  }
+
+  .text-box-header {
+    padding: 5rem;
+  }
+
+  .hero-img1 {
+    display: none;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  .grid--2--cols {
+    gap: 3.2rem;
+  }
+
+  .grid--3--cols {
+    gap: 2.4rem;
+  }
+}
+
+@media (max-width: 60em) {
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    background-color: #554dde;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hiddden;
+    pointer-events: none;
+    transition: 0.3s ease-in;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 4.8rem;
+    cursor: pointer;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    color: #fff;
+    font-size: 2.4rem;
+  }
+
+  .nav-link:hover,
+  .nav-link:active {
+    color: #111;
+  }
+
+  .grid--2--cols {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    max-width: 70rem;
+  }
+
+  .about-img {
+    width: 70%;
+  }
+
+  .grid--3--cols {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+    column-gap: 3.2rem;
+  }
+}
+
+@media (max-width: 44em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .grid--3--cols {
+    column-gap: 2.4rem;
+  }
+  .text-box-header {
+    text-align: center;
+  }
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1.5;
+
+    letter-spacing: 0.6px;
+  }
+}
+
+@media (max-width: 39em) {
+  .about_section,
+  .products,
+  .how--to--cook,
+  .benefits {
+    padding: 7.2rem;
+  }
+
+  .grid--3--cols {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .grid--2--cols {
+    grid-template-columns: 1fr;
+  }
+}

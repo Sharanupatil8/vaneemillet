@@ -1,0 +1,368 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* setting root font size as 10px*/
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f2f6ff;
+  color: #333;
+  font-weight: 400;
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+/*******
+general css
+********/
+
+h2 {
+  font-size: 4rem;
+  letter-spacing: -1px;
+  margin-bottom: 3.2rem;
+  text-decoration: underline;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 7.2rem;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+/*******
+navbar
+********/
+
+header {
+  height: 10rem;
+  width: 100%;
+  padding: 1rem 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  position: fixed;
+  background-color: #f2f6ffbb;
+  z-index: 11;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.logo-img {
+  width: 8rem;
+  height: 8rem;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
+/* .nav {
+  opacity: 1;
+} */
+
+.nav-links {
+  list-style: none;
+}
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  letter-spacing: 0.2px;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #554dde;
+  text-decoration: underline;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  background-color: #544dde;
+  color: #fff;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 6px 1.2rem;
+  border-radius: 2px;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.hero-image {
+  height: 90vh;
+  width: 100%;
+}
+
+.hero-img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+.hero-section {
+  width: 100%;
+  height: 90vh;
+  background-image: url("img/zura-narimanishvili-ovzLiBLMi0I-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-top: 10rem;
+}
+
+.header-hero {
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 7.2rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 12rem 3rem;
+}
+
+.hero-img1 {
+  width: 100%;
+}
+.text-box-header {
+  background-color: rgba(51, 51, 51, 0.774);
+  padding: 3rem 2.5rem;
+  border-radius: 8px;
+}
+
+.header-button {
+  background-color: #544dde;
+  padding: 8px 1.6rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  margin-top: 1.6rem;
+  display: inline-block;
+  border-radius: 3px;
+}
+/*******
+about
+********/
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.about__section {
+  padding: 12rem 0;
+}
+
+.about-text {
+  font-size: 1.7rem;
+  line-height: 1.8;
+}
+
+.about-img {
+  width: 100%;
+  height: 90%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+/*******
+product
+********/
+.products {
+  padding: 12rem 0;
+}
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.box {
+  width: 35rem;
+  background-color: rgba(255, 255, 255, 0.616);
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  border-radius: 8px;
+  box-shadow: 0 16px 26px #f2f6ff49;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.box:hover {
+  transform: translateY(2%);
+}
+
+.product-img {
+  width: 100%;
+}
+
+.product-title {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.product-link:link,
+.product-link:visited {
+  background-color: #554dde;
+  padding: 8px 1.6rem;
+  color: #fff;
+  font-size: 1.8rem;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+  transition: 0.2s ease-in;
+}
+
+.product-link:hover,
+.product-link:active {
+  background-color: #4d45c8;
+}
+
+.title {
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 7.2rem;
+}
+
+/********cooing instructions************/
+.how--to--cook {
+  padding: 12rem 0;
+}
+.card {
+  text-align: center;
+
+  background-color: rgba(255, 255, 255, 0.616);
+  padding: 1.5rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: rgba(135, 154, 173, 0.2) 0px 8px 24px;
+  transition: 0.2s ease-in;
+}
+
+.card:hover {
+  transform: translateY(-10%);
+  box-shadow: 0 8px 24px rgba(92, 91, 91, 0.473);
+}
+.cooking-img {
+  width: 12.5rem;
+  padding-top: 1rem;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1.6rem;
+}
+
+.cooking-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/***********Benefits**************/
+.benefits {
+  padding: 12rem 0;
+}
+
+hr {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: rgba(188, 184, 252, 0.15);
+  margin-top: 12rem;
+  padding: 4.8rem;
+  border-radius: 12px 12px 0 0;
+}
+
+.footer-logo {
+  width: 9rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer-adress {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.footer-title {
+  font-size: 2.4rem;
+  padding: 5.2rem 0 3.2rem 0;
+  text-transform: uppercase;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-link a {
+  font-size: 1.8rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.icon {
+  font-size: 1.8rem;
+  color: #333;
+  margin-top: 0.4rem;
+}
+
+.icon:first-child {
+  align-self: flex-start;
+}
+
+.icon-social {
+  font-size: 1.8rem;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 1.2rem;
+  font-size: 1.6rem;
+  color: #555;
+}
